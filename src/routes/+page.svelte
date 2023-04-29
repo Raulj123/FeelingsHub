@@ -18,6 +18,9 @@
       
       <header>{feels.name}</header>
       <p>{feels.feelings}</p>
+        <form action="?/deleteFeel&id={feels.id}" method="POST">
+          <button type="submit" class="outline secondary " style=""name="">Delete</button>
+        </form>
     </article>
       {/each}
     </div>
@@ -40,8 +43,7 @@
       </div>
   </div>
  
-
-
+<a href="/view">click me</a>
 
 
 <style>
@@ -58,14 +60,12 @@
   }
   article{
     width:100%;
-    height:35%;
-    margin-bottom:20px;
-    gap:40px;
+    
   }
   article p{
-    margin:0px;
     font-size:15px;
-    margin-left:0px;
+    margin-top:10px;
+    padding:10px;
   }
   article header{
     padding:10px;
