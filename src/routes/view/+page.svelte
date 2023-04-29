@@ -1,4 +1,10 @@
+<script lang="ts">
+  import type {PageData} from './$types' 
+  export let data: PageData
+  $: ({feelss} = data)
 
+ 
+</script>
 
 <h2 style="text-align:center">This is the current database in ElephantSQL🐘 </h2>
 <table role="grid" >
@@ -11,9 +17,11 @@
   </thead>
     <tbody>
     <tr>
+      {#each feelss as feels}
     <th scope="row">1</th>
-    <td>raul</td>
-    <td>Feelings</td>
+    <td>{feels.name}</td>
+    <td>{feels.feelings}</td>
+      {/each}
   </tr>
     </tbody>
 </table>
