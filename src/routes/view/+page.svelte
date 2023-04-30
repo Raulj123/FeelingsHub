@@ -16,13 +16,13 @@
     </tr>
   </thead>
     <tbody>
-    <tr>
       {#each feelss as feels}
-    <th scope="row">1</th>
+    <tr>
+    <th scope="row">{feels.id}</th>
     <td>{feels.name}</td>
     <td>{feels.feelings}</td>
-      {/each}
   </tr>
+    {/each}
     </tbody>
 </table>
 
