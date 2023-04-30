@@ -10,7 +10,7 @@
 <table role="grid" >
   <thead>
     <tr>
-      <th scope="col">#</th>
+      <th scope="col">id</th>
       <th scope="col">Name</th>
       <th scope="col">Feelings</th>
     </tr>
