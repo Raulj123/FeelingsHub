@@ -6,7 +6,9 @@
  
 </script>
 
-<h2 style="text-align:center">This is the current database in ElephantSQL🐘 </h2>
+<h3 style="text-align:center">This is the current database in ElephantSQL🐘 
+<a href="/">Back home</a>
+</h3>
 <table role="grid" >
   <thead>
     <tr>
@@ -25,7 +27,6 @@
     {/each}
     </tbody>
 </table>
-
 
 
   <style>
