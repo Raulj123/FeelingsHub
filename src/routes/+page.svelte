@@ -6,7 +6,6 @@
 
 
 
-
 </script>
 
   <div class="grid">
@@ -31,15 +30,16 @@
 
     <div>
     <form action="?/createFeels" method="POST">
-      <h2 style="margin-bottom:3px; text-align:center;">Create a feel</h2>
+      <h2 style="margin-bottom:3px; text-align:center;">Create a feeling🤔</h2>
       <label for="firstname">
         First name
       <input type="text" name="name" placeholder="First name" required>
+          <small>May be anonymous if you'd like</small>
       </label>
       <label for ="content">
       How did you feel today?
-      <input type="text" name="feelings" placeholder="shit" required>
-      <small>We'll never share your info</small>
+      <textarea type="text" name="feelings" placeholder="shit" rows={4} required />
+      <small>Text over 350 characters wont be accepted</small>
       </label>
     <button type="submit">Submit</button>
   </form>
