@@ -7,7 +7,7 @@
 
 
 </script>
-
+<p style="text-align:center; font-weight:bold;">A website that allows users to share, view, edit and delete feelings in a database.</p>
   <div class="grid">
     <div>
       <h2 style="margin-bottom:15px; text-align:center;">Feelings</h2>
@@ -18,10 +18,10 @@
       <header>{feels.name}</header>
       <p>{feels.feelings}</p>
         <form action="?/deleteFeel&id={feels.id}" method="POST">
-          <button type="submit" class="outline  " style=""name="">Delete</button>
+          <button type="submit" class="outline  " style=""name="">Delete 🗑️</button>
         </form>
         
-          <a href="/{feels.id}" role="button" class="outline" style="width:100%;">Edit</a>
+          <a href="/{feels.id}" role="button" class="outline" style="width:100%;">Edit 📝</a>
         
     </article>
       {/each}
@@ -32,9 +32,8 @@
     <form action="?/createFeels" method="POST">
       <h2 style="margin-bottom:3px; text-align:center;">Create a feeling🤔</h2>
       <label for="firstname">
-        First name
-      <input type="text" name="name" placeholder="First name" required>
-          <small>May be anonymous if you'd like</small>
+        Name
+      <input type="text" name="name" placeholder="Anonymous" required>
       </label>
       <label for ="content">
       How did you feel today?
@@ -46,7 +45,7 @@
       </div>
   </div>
  
-<a href="/view" style="text-align:center;">View the database</a>
+<a href="/view" style="text-align:center; margin-left:30px;">View the database 🗂️ </a>
 
 
 <style>

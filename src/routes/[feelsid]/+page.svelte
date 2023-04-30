@@ -10,14 +10,15 @@
     <form action="?/updateFeels" method="POST">
       <h2 style="margin-bottom:3px; text-align:center;">Edit {feels.name} feelings</h2>
       <label for="firstname">
-        First name
-      <input type="text" name="name" placeholder="First name" value={feels.name} required>
+        Name
+      <input type="text" name="name" placeholder="Anonymous" value={feels.name} required>
       </label>
       <label for ="content">
       How did you feel today?
-      <input type="text" name="feelings" placeholder="shit" value={feels.feelings}required>
-      <small>We'll never share your info</small>
-      </label>
+      <textarea type="text" name="feelings" placeholder="shit" rows={4} value={feels.feelings} required />
+      <small>Text over 350 wont be accepted</small>
+      
+    </label>
     <button type="submit">Submit</button>
   </form>
       </div>
@@ -25,7 +26,7 @@
 
   <style>
   form{
-    width:80%;
+    width:60%;
     margin-left:auto;
     margin-right:auto;
   }
