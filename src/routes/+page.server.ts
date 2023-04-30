@@ -18,6 +18,9 @@ export const actions: Actions = {
 			console.log('msg');
 			return fail(400, { message: 'msg too long' });
 		}
+		if (name.length > 50) {
+			return fail(400, { message: 'name too long' });
+		}
 		try {
 			await prisma.feels.create({
 				data: {

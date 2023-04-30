@@ -10,7 +10,7 @@
 
   <div class="grid">
     <div>
-      <h2 style="margin-bottom:15px; text-align:center;">Feels</h2>
+      <h2 style="margin-bottom:15px; text-align:center;">Feelings</h2>
       {#each feelss as feels}
 
     <article>
