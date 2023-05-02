@@ -8,7 +8,7 @@
 
 <div>
     <form action="?/updateFeels" method="POST">
-      <h2 style="margin-bottom:3px; text-align:center;">Edit {feels.name} feelings</h2>
+      <h3 style="margin-bottom:3px; text-align:center;">Edit {feels.name} feelings</h3>
       <label for="firstname">
         Name
       <input type="text" name="name" placeholder="Anonymous" value={feels.name} required>
