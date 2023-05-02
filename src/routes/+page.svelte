@@ -7,7 +7,7 @@
 
 
 </script>
-<p style="text-align:center; font-weight:bold;">A website that allows users to share, view, edit and delete feelings in a database.</p>
+<p style="text-align:center; font-weight:bold;">A website that allows users to share, view, edit and delete feelings</p>
   <div class="grid">
     <div>
       <h2 style="margin-bottom:15px; text-align:center;">Feelings</h2>
@@ -45,7 +45,7 @@
       </div>
   </div>
  
-<a href="/view" style="text-align:center; margin-left:30px;">View the database 🗂️ </a>
+<a href="/view" style="text-align:center; margin-left:30px; display:block;">View the database 🗂️ </a>
 
 
 <style>
