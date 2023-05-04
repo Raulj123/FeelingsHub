@@ -7,7 +7,7 @@ export const load: PageServerLoad = async ({ params }) => {
 	const getFeels = async () => {
 		const feels = await prisma.feels.findUnique({
 			where: {
-				id: Number(params.feelsId)
+				id: Number(params.feelsid)
 			}
 		});
 		if (!feels) {
@@ -29,7 +29,7 @@ export const actions: Actions = {
 		try {
 			await prisma.feels.update({
 				where: {
-					id: Number(params.feelsId)
+					id: Number(params.feelsid)
 				},
 				data: {
 					name,
