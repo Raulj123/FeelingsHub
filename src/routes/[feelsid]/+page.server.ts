@@ -3,6 +3,7 @@ import { prisma } from '$lib/server/prisma';
 import { error, fail } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async ({ params }) => {
+	console.log('params:', params);
 	const getFeels = async () => {
 		const feels = await prisma.feels.findUnique({
 			where: {
